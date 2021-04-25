@@ -17,6 +17,7 @@ class DriverService
             'middle_name' => $request->input('middle_name'),
             'last_name' => $request->input('last_name'),
             'driver_license_number' => $request->input('driver_license_number'),
+            'driver_license_series' => $request->input('driver_license_series'),
             'driver_license_validity_until' => $request->input('driver_license_validity_until'),
         ]);
     }

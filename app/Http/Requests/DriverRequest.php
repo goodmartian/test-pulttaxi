@@ -13,7 +13,8 @@ class DriverRequest extends FormRequest
             'last_name' => 'required|string',
             'middle_name' => 'nullable|string',
             'driver_license_number' => 'required|string',
-            'driver_license_validity_until' => 'required|date'
+            'driver_license_series' => 'required|string',
+            'driver_license_validity_until' => 'required|date',
         ];
     }
 
