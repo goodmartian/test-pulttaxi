@@ -15,7 +15,7 @@ class CreateCarsTable extends Migration
             $table->string('gov_number');
             $table->string('color');
             $table->year('manufacture_year');
-            $table->foreignId('driver_id')->constrained('drivers');
+            $table->foreignId('driver_id')->nullable()->constrained('drivers');
 
             $table->timestamps();
             $table->softDeletes();

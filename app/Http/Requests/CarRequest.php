@@ -13,7 +13,7 @@ class CarRequest extends FormRequest
             'model' => 'required|string',
             'gov_number' => 'required|string',
             'color' => 'required|string',
-            'manufacture_year' => 'required|min:1900|max:' . date('Y'),
+            'manufacture_year' => 'required|date_format:Y'
         ];
     }
 

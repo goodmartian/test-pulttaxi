@@ -15,6 +15,7 @@ class CarService
             'brand' => $request->input('brand'),
             'model' => $request->input('model'),
             'gov_number' => $request->input('gov_number'),
+            'color' => $request->input('color'),
             'manufacture_year' => $request->input('manufacture_year'),
         ]);
     }

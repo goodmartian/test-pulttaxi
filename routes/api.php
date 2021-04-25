@@ -21,7 +21,7 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::apiResource('pricing-plans', PricingPlanController::class);
 });
 
-Route::apiResource('orders', OrderController::class);
+Route::apiResource('orders', OrderController::class)->except('destroy');
 
 Route::prefix('auth')->group(function() {
     Route::post('register', [AuthController::class, 'register']);
