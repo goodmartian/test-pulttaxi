@@ -24,8 +24,8 @@ class Driver extends Model
         return $this->hasMany(Car::class);
     }
 
-    public function getAttributeFullName()
+    public function getFullNameAttribute()
     {
-        return "{$this->first_name} {$this->last_name} {$this->middle_name}";
+        return "{$this->first_name} {$this->last_name}";
     }
 }

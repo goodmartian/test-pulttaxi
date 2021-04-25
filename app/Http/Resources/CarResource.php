@@ -20,7 +20,7 @@ class CarResource extends JsonResource
             'gov_number' => $this->gov_number,
             'color' => $this->color,
             'manufacture_year' => $this->manufacture_year,
-            'driver' => new DriverResource('driver'),
+            'driver' => new DriverResource($this->driver),
             'pricing_plans' => PricingPlanResource::collection($this->whenLoaded('pricingPlans')),
         ];
     }
